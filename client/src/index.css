@@ -359,6 +359,9 @@ em { font-style: normal; color: var(--green-muted); }
 .recent-achievements-grid .achievement-card-cta { color: var(--paper); }
 .achievement-detail-backdrop { position: fixed; z-index: 100; inset: 0; display: grid; place-items: center; padding: 1rem; background: rgb(5 6 5 / .78); backdrop-filter: blur(10px); }
 .achievement-detail { position: relative; display: grid; gap: 2rem; width: min(100%, 72rem); max-height: calc(100svh - 2rem); overflow-y: auto; padding: 3.9rem 1.25rem 1.25rem; background: #e8e8e2; color: #0b0d0c; box-shadow: 0 24px 90px rgb(5 6 5 / .45); }
+.achievement-detail-copy, .achievement-detail-images { min-width: 0; }
+.achievement-detail-no-images { max-width: 54rem; }
+.achievement-detail-no-images .achievement-detail-copy { max-width: 43rem; }
 .achievement-detail-close { position: absolute; top: 1rem; right: 1.1rem; display: inline-flex; align-items: center; gap: .4rem; padding: 0; border: 0; background: transparent; color: #496c60; font-family: var(--mono); font-size: .58rem; letter-spacing: .1em; cursor: pointer; }
 .achievement-detail-close:hover { color: #0b0d0c; }
 .achievement-detail-copy { display: grid; align-content: start; gap: 1rem; }
@@ -492,7 +495,9 @@ em { font-style: normal; color: var(--green-muted); }
   .achievement-card h3 { max-width: 36rem; }
   .achievement-card-summary { font-size: .96rem; }
   .achievement-detail-backdrop { padding: 2rem; }
-  .achievement-detail { grid-template-columns: minmax(0, .9fr) minmax(18rem, 1.1fr); align-items: start; gap: 3rem; padding: 3rem; }
+  .achievement-detail { grid-template-columns: minmax(0, 1.1fr) minmax(17rem, .9fr); align-items: start; gap: 3rem; padding: 3rem; }
+  .achievement-detail h2 { font-size: clamp(2.8rem, 5vw, 5rem); }
+  .achievement-detail-no-images { grid-template-columns: minmax(0, 1fr); }
   .achievement-detail-close { top: 1.5rem; right: 1.6rem; }
   .achievement-detail-images { margin-top: .2rem; }
   .members-gallery { padding-left: 2rem; padding-right: 2rem; }
@@ -544,6 +549,7 @@ em { font-style: normal; color: var(--green-muted); }
   .achievement-card { padding-top: 1.9rem; padding-bottom: 2.1rem; }
   .achievement-card h3 { font-size: clamp(2.2rem, 4.4vw, 4.6rem); }
   .achievement-detail { padding: 3.5rem; }
+  .achievement-detail h2 { max-width: 12ch; }
   .members-opening { min-height: 82svh; padding-top: 7rem; }
   .members-gallery { padding: 7rem 7vw 7.5rem; }
   .members-gallery h2 { margin-top: 4.7rem; margin-bottom: 4.4rem; }

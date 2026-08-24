@@ -79,12 +79,7 @@ const recentAchievements: Achievement[] = [
     result: "Winners",
     summary: "Sri Vishnu PV and Dhriti P Arya won the Yadalam Debate 2026, an inter-collegiate debate organised by the Rotary Club of Bangalore.",
     detail: "The win adds another recent result to the society’s current competitive record, with Sri Vishnu PV and Dhriti P Arya named on the winning entry.",
-    images: [
-      {
-        src: "/assets/accolades-yadalam.png",
-        alt: "Sri Vishnu PV and Dhriti P Arya named as Yadalam Debate 2026 winners",
-      },
-    ],
+    images: [],
   },
   {
     id: "vimarsha-2026",
@@ -95,12 +90,7 @@ const recentAchievements: Achievement[] = [
     result: "Runner-up",
     summary: "Maanav Talwar finished runner-up at Vimarsha 2026.",
     detail: "Vimarsha is a reflective debate organised by the Literature and Debate Society of BMSCE Bangalore as part of their cultural fest, Utsav.",
-    images: [
-      {
-        src: "/assets/accolades-vimarsha.png",
-        alt: "Vimarsha 2026 runner-up presentation",
-      },
-    ],
+    images: [],
   },
   {
     id: "cupd-open-break",
@@ -206,7 +196,7 @@ export default function Accolades() {
       </section>
       {selectedAchievement && (
         <div className="achievement-detail-backdrop" role="presentation" onClick={() => setSelectedAchievement(null)}>
-          <section className="achievement-detail" role="dialog" aria-modal="true" aria-labelledby="achievement-detail-heading" onClick={(event) => event.stopPropagation()}>
+          <section className={`achievement-detail${selectedAchievement.images.length === 0 ? " achievement-detail-no-images" : ""}`} role="dialog" aria-modal="true" aria-labelledby="achievement-detail-heading" onClick={(event) => event.stopPropagation()}>
             <button className="achievement-detail-close" type="button" onClick={() => setSelectedAchievement(null)} aria-label="Close achievement details">CLOSE <X size={16} /></button>
             <div className="achievement-detail-copy">
               <p className="section-index">{selectedAchievement.category} / {selectedAchievement.period}</p>
@@ -215,11 +205,13 @@ export default function Accolades() {
               <p>{selectedAchievement.summary}</p>
               <p>{selectedAchievement.detail}</p>
             </div>
-            <div className="achievement-detail-images">
-              {selectedAchievement.images.map((image) => (
-                <img key={image.src} src={image.src} alt={image.alt} />
-              ))}
-            </div>
+            {selectedAchievement.images.length > 0 && (
+              <div className="achievement-detail-images">
+                {selectedAchievement.images.map((image) => (
+                  <img key={image.src} src={image.src} alt={image.alt} />
+                ))}
+              </div>
+            )}
           </section>
         </div>
       )}
