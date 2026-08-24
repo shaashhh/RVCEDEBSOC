@@ -47,6 +47,51 @@ export default function Members() {
           </figure>
         </div>
       </section>
+      <section className="core-team" aria-labelledby="core-team-heading">
+        <div className="core-team-heading-row">
+          <p className="section-index">THE COLLECTIVE / 02</p>
+          <p className="core-team-note">The people carrying the dialogue forward</p>
+        </div>
+        <h2 id="core-team-heading">Core Team</h2>
+        <div className="core-team-grid">
+          <article className="core-team-card core-team-card-president">
+            <div className="core-team-photo">
+              <img src="/assets/core-team-sri-vishnu-pv.jpeg" alt="Sri Vishnu PV, President of RVCE DebSoc" />
+            </div>
+            <div className="core-team-meta">
+              <p className="core-team-role"><span>01</span> PRESIDENT</p>
+              <h3>Sri Vishnu PV</h3>
+            </div>
+          </article>
+          <article className="core-team-card core-team-card-vice-president">
+            <div className="core-team-photo">
+              <img src="/assets/core-team-dhriti-p-arya.jpeg" alt="Dhriti P Arya, Vice President of RVCE DebSoc" />
+            </div>
+            <div className="core-team-meta">
+              <p className="core-team-role"><span>02</span> VICE PRESIDENT</p>
+              <h3>Dhriti P Arya</h3>
+            </div>
+          </article>
+          <article className="core-team-card">
+            <div className="core-team-photo">
+              <img src="/assets/core-team-shrinivas-deshpande.jpeg" alt="Shrinivas Deshpande, Core Team member of RVCE DebSoc" />
+            </div>
+            <div className="core-team-meta">
+              <p className="core-team-role"><span>03</span> CORE TEAM</p>
+              <h3>Shrinivas Deshpande</h3>
+            </div>
+          </article>
+          <article className="core-team-card">
+            <div className="core-team-photo">
+              <img src="/assets/core-team-umaid-rajsingh.jpeg" alt="Umaid Rajsingh, Core Team member of RVCE DebSoc" />
+            </div>
+            <div className="core-team-meta">
+              <p className="core-team-role"><span>04</span> CORE TEAM</p>
+              <h3>Umaid Rajsingh</h3>
+            </div>
+          </article>
+        </div>
+      </section>
       <section className="members-roster" aria-label="Member roster categories">
         <article><span>01</span><h2>Committee</h2><p>The current committee roster will be published by RVCE DebSoc.</p></article>
         <article><span>02</span><h2>Speakers</h2><p>Member profiles and debate interests will be added to this window.</p></article>
