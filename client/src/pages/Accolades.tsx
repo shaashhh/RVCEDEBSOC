@@ -130,11 +130,11 @@ const recentAchievements: Achievement[] = [
   },
 ];
 
-function AchievementCard({ achievement, onOpen }: { achievement: Achievement; onOpen: (achievement: Achievement) => void }) {
+function AchievementCard({ achievement, onOpen, showCategory = true }: { achievement: Achievement; onOpen: (achievement: Achievement) => void; showCategory?: boolean }) {
   return (
-    <button className="achievement-card" type="button" onClick={() => onOpen(achievement)}>
+    <button className={`achievement-card${showCategory ? "" : " achievement-card-primary"}`} type="button" onClick={() => onOpen(achievement)}>
       <span className="achievement-card-topline"><span>{achievement.index}</span><span>{achievement.period}</span></span>
-      <span className="achievement-card-category">{achievement.category}</span>
+      {showCategory && <span className="achievement-card-category">{achievement.category}</span>}
       <h3>{achievement.title}</h3>
       <strong>{achievement.result}</strong>
       <span className="achievement-card-summary">{achievement.summary}</span>
@@ -168,10 +168,10 @@ export default function Accolades() {
       <section className="achievements-ledger scroll-reveal" aria-labelledby="achievements-heading">
         <div className="achievements-heading"><p className="section-index">ACHIEVEMENTS</p><h2 id="achievements-heading">A record that<br />travels.</h2></div>
         <div className="achievement-group">
-          <div className="achievement-group-heading"><span>01</span><strong>International</strong><p>Results beyond the national circuit.</p></div>
+          <div className="achievement-group-heading"><span>01</span><strong>International</strong></div>
           <div className="achievement-grid">
             {achievements.filter((achievement) => achievement.category === "International").map((achievement) => (
-              <AchievementCard key={achievement.id} achievement={achievement} onOpen={setSelectedAchievement} />
+              <AchievementCard key={achievement.id} achievement={achievement} onOpen={setSelectedAchievement} showCategory={false} />
             ))}
           </div>
         </div>
@@ -179,7 +179,7 @@ export default function Accolades() {
           <div className="achievement-group-heading"><span>02</span><strong>National</strong><p>Consistency across India’s strongest rooms.</p></div>
           <div className="achievement-grid">
             {achievements.filter((achievement) => achievement.category === "National").map((achievement) => (
-              <AchievementCard key={achievement.id} achievement={achievement} onOpen={setSelectedAchievement} />
+              <AchievementCard key={achievement.id} achievement={achievement} onOpen={setSelectedAchievement} showCategory={false} />
             ))}
           </div>
         </div>
