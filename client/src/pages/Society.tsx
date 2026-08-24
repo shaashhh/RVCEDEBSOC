@@ -33,7 +33,7 @@ export default function Society() {
           </p>
           <p>
             From British Parliamentary debates to wide-ranging conversations on contemporary issues,
-            DebSoc is a hub for expression, leadership, and intellectual growth—supported by a legacy
+            DebSoc is a hub for expression, leadership, and intellectual growth, supported by a legacy
             of national and international achievement.
           </p>
           </div>

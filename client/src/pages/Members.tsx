@@ -83,11 +83,11 @@ export default function Members() {
           </article>
           <article className="core-team-card">
             <div className="core-team-photo">
-              <img src="/assets/core-team-umaid-rajsingh.jpeg" alt="Umaid Rajsingh, Core Team member of RVCE DebSoc" />
+              <img src="/assets/core-team-umaid-rajsingh.jpeg" alt="Umaid Raj Singh, Core Team member of RVCE DebSoc" />
             </div>
             <div className="core-team-meta">
               <p className="core-team-role"><span>04</span> CORE TEAM</p>
-              <h3>Umaid Rajsingh</h3>
+              <h3>Umaid Raj Singh</h3>
             </div>
           </article>
         </div>
