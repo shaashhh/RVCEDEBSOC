@@ -24,7 +24,7 @@ export default function SIP() {
           <span>BULLETIN / 03 — REGISTRATION</span>
           <div className="registration-placeholder" aria-hidden="true"><i /><i /><i /><i /><i /><i /><i /><i /><i /></div>
           <p>REGISTRATION NOTICE<br />TO BE RELEASED</p>
-          <a href="mailto:debsoc@rvce.edu.in">CONTACT DEBSOC <ArrowUpRight size={15} /></a>
+          <a href="mailto:rvcedebsoc2025@gmail.com">CONTACT DEBSOC <ArrowUpRight size={15} /></a>
         </article>
       </section>
     </main>
