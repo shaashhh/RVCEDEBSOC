@@ -92,12 +92,7 @@ export default function Members() {
           </article>
         </div>
       </section>
-      <section className="members-roster" aria-label="Member roster categories">
-        <article><span>01</span><h2>Committee</h2><p>The current committee roster will be published by RVCE DebSoc.</p></article>
-        <article><span>02</span><h2>Speakers</h2><p>Member profiles and debate interests will be added to this window.</p></article>
-        <article><span>03</span><h2>Alumni</h2><p>The archive will acknowledge the people who carried the dialogue forward.</p></article>
-      </section>
-      <a className="member-contact" href="mailto:debsoc@rvce.edu.in">REQUEST MEMBER INFORMATION <ArrowUpRight size={18} /></a>
+      <a className="member-contact" href="mailto:rvcedebsoc2025@gmail.com">REQUEST MEMBER INFORMATION <ArrowUpRight size={18} /></a>
     </main>
   );
 }
