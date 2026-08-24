@@ -53,7 +53,6 @@ export default function Home() {
         <div className="hero-title-wrap">
           <p className="title-kicker">RV College of Engineering</p>
           <h1 id="hero-title" className="hero-title" aria-label="RVCE DebSoc"><span>RVCE</span><span>DEBSOC</span></h1>
-          <p className="title-subline">A society for the living argument.</p>
         </div>
       </section>
 
