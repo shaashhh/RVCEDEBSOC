@@ -617,6 +617,7 @@ em { font-style: normal; color: var(--green-muted); }
   .about-narrative .about-copy { grid-template-columns: repeat(2, 1fr); max-width: none; }
   .achievements-ledger { grid-template-columns: minmax(12rem, .68fr) minmax(0, 1.32fr); column-gap: 4rem; align-items: start; }
   .achievements-heading { position: sticky; top: 5rem; }
+  .achievement-group { grid-column: 2; }
   .achievement-stage { padding: 2.2rem 0 2.5rem; }
   .recent-achievements > div { grid-template-columns: repeat(3, 1fr); }
   .recent-achievements article { grid-template-columns: 1fr; gap: .6rem; padding: 1.25rem; border-bottom: 0; border-right: 1px solid var(--rule); }
