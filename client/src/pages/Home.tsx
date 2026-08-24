@@ -51,7 +51,6 @@ export default function Home() {
         </nav>
         <img className="hero-emblem" src={OFFICIAL_EMBLEM} alt="RVCE Debating Society official emblem" />
         <div className="hero-title-wrap">
-          <p className="title-kicker">RV College of Engineering</p>
           <h1 id="hero-title" className="hero-title" aria-label="RVCE DebSoc"><span>RVCE</span><span>DEBSOC</span></h1>
         </div>
       </section>
