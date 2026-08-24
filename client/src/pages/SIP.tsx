@@ -18,8 +18,8 @@ export default function SIP() {
         <p className="sip-welcome">Your first conversation starts here.</p>
       </section>
       <section className="sip-details" aria-label="Student Induction Program details">
-        <article><span>BULLETIN / 01 — DATE</span><strong>28 AUGUST<br />2026</strong></article>
-        <article><span>BULLETIN / 02 — VENUE</span><strong>TO BE<br />ANNOUNCED</strong></article>
+        <article><span>BULLETIN / 01 — DATE</span><strong>29 AUGUST<br />2026</strong></article>
+        <article><span>BULLETIN / 02 — VENUE</span><strong>LIBRARY<br />REEL ROOM</strong></article>
         <article className="registration-panel">
           <span>BULLETIN / 03 — REGISTRATION</span>
           <div className="registration-placeholder" aria-hidden="true"><i /><i /><i /><i /><i /><i /><i /><i /><i /></div>
