@@ -70,7 +70,7 @@ export default function Home() {
       <footer className="site-footer">
         <div className="footer-mark"><img src={DIALOGUE_MARK} alt="RVCE DebSoc dialogue mark" /><span>RVCE DEBSOC</span></div>
         <div className="footer-title">THE<br />DIALOGUE<br />CONTINUES.</div>
-        <div className="footer-bottom"><span>RV College of Engineering, Bengaluru</span><a href="mailto:debsoc@rvce.edu.in">debsoc@rvce.edu.in <ArrowUpRight size={15} /></a><span>© 2026</span></div>
+        <div className="footer-bottom"><span>RV College of Engineering, Bengaluru</span><a href="mailto:rvcedebsoc2025@gmail.com">rvcedebsoc2025@gmail.com <ArrowUpRight size={15} /></a><span>© 2026</span></div>
       </footer>
     </main>
   );
