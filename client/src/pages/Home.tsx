@@ -19,11 +19,11 @@ const navigationItems = [
 
 const pathways = [
   { index: "", eyebrow: "", title: <>Student Induction<br />Program ’26</>, href: "/sip", className: "pathway-sip" },
-  { index: "02", eyebrow: "The society", title: <>About<br />DebSoc</>, href: "/society", className: "pathway-about" },
-  { index: "03", eyebrow: "The record", title: <>Accolades</>, href: "/accolades", className: "pathway-accolades" },
-  { index: "04", eyebrow: "Argument in form", title: <>British<br />Parliamentary</>, href: "/formats/bp", className: "pathway-bp" },
-  { index: "05", eyebrow: "Argument in form", title: <>Asian<br />Parliamentary</>, href: "/formats/ap", className: "pathway-ap" },
-  { index: "06", eyebrow: "The collective", title: <>Members</>, href: "/members", className: "pathway-members" },
+  { index: "", eyebrow: "", title: <>About<br />DebSoc</>, href: "/society", className: "pathway-about" },
+  { index: "", eyebrow: "", title: <>Accolades</>, href: "/accolades", className: "pathway-accolades" },
+  { index: "", eyebrow: "", title: <>British<br />Parliamentary</>, href: "/formats/bp", className: "pathway-bp" },
+  { index: "", eyebrow: "", title: <>Asian<br />Parliamentary</>, href: "/formats/ap", className: "pathway-ap" },
+  { index: "", eyebrow: "The collective", title: <>Members</>, href: "/members", className: "pathway-members" },
 ];
 
 export default function Home() {
