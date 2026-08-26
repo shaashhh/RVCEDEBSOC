@@ -23,7 +23,7 @@ const pathways = [
   { index: "", eyebrow: "", title: <>Accolades</>, href: "/accolades", className: "pathway-accolades" },
   { index: "", eyebrow: "", title: <>British<br />Parliamentary</>, href: "/formats/bp", className: "pathway-bp" },
   { index: "", eyebrow: "", title: <>Asian<br />Parliamentary</>, href: "/formats/ap", className: "pathway-ap" },
-  { index: "", eyebrow: "The collective", title: <>Members</>, href: "/members", className: "pathway-members" },
+  { index: "", eyebrow: "", title: <>Members</>, href: "/members", className: "pathway-members" },
 ];
 
 export default function Home() {
