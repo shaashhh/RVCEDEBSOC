@@ -18,7 +18,7 @@ const navigationItems = [
 ];
 
 const pathways = [
-  { index: "01", eyebrow: "Now convening", title: <>Student Induction<br />Program ’26</>, href: "/sip", className: "pathway-sip" },
+  { index: "", eyebrow: "", title: <>Student Induction<br />Program ’26</>, href: "/sip", className: "pathway-sip" },
   { index: "02", eyebrow: "The society", title: <>About<br />DebSoc</>, href: "/society", className: "pathway-about" },
   { index: "03", eyebrow: "The record", title: <>Accolades</>, href: "/accolades", className: "pathway-accolades" },
   { index: "04", eyebrow: "Argument in form", title: <>British<br />Parliamentary</>, href: "/formats/bp", className: "pathway-bp" },
