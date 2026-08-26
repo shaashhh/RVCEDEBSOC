@@ -105,8 +105,12 @@ export default function SIP() {
 
           </div>
 
-          <a href="mailto:rvcedebsoc2025@gmail.com">
-            CONTACT DEBSOC <ArrowUpRight size={15} />
+          <a
+            href="https://www.instagram.com/rvcedebsoc/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            OUR INSTAGRAM <ArrowUpRight size={15} />
           </a>
         </article>
       </section>
