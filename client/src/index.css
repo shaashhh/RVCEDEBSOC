@@ -356,7 +356,6 @@ em { font-style: normal; color: var(--green-muted); }
 .registration-panel > a {
   margin-top: 1.5rem;
   padding-top: 1.25rem;
-  border-top: 1px solid rgb(232 232 226 / .14);
 }
 
 .registration-panel {
