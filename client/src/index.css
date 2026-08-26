@@ -307,6 +307,63 @@ em { font-style: normal; color: var(--green-muted); }
 .registration-panel > p { margin: 0; color: #b9d2c7; line-height: 1.6; }
 .registration-panel a { display: inline-flex; align-items: center; gap: .38rem; width: max-content; color: var(--paper); font-family: var(--mono); font-size: .61rem; letter-spacing: .1em; transition: color 180ms var(--ease-out), gap 180ms var(--ease-out); }
 .registration-panel a:hover { gap: .6rem; color: var(--gold); }
+/* ─────────────────────────────────────────────
+   SIP — EVENT LIST
+   ───────────────────────────────────────────── */
+
+.sip-events {
+  display: grid;
+  gap: 0;
+  margin: 1.5rem 0 0;
+  border-top: 1px solid rgb(232 232 226 / .14);
+}
+
+.sip-event {
+  display: grid;
+  grid-template-columns: 2rem 1fr;
+  gap: .85rem;
+  padding: 1.1rem 0;
+  border-bottom: 1px solid rgb(232 232 226 / .12);
+}
+
+.sip-event > span {
+  padding-top: .15rem;
+  color: var(--green-muted);
+  font-family: var(--mono);
+  font-size: .55rem;
+  letter-spacing: .08em;
+}
+
+.sip-event h2 {
+  margin: 0;
+  color: var(--paper);
+  font-family: var(--display);
+  font-size: clamp(1.35rem, 6vw, 2.2rem);
+  font-weight: 500;
+  line-height: .95;
+  letter-spacing: -.055em;
+}
+
+.sip-event p {
+  max-width: 32rem;
+  margin: .55rem 0 0;
+  color: rgb(232 232 226 / .72);
+  font-family: var(--body);
+  font-size: .82rem;
+  line-height: 1.5;
+}
+
+.registration-panel > a {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgb(232 232 226 / .14);
+}
+
+.registration-panel {
+  display: block !important;
+  min-height: unset !important;
+  padding-bottom: 1.75rem !important;
+}
 
 .society-window-hero { position: relative; isolation: isolate; display: grid; min-height: 82svh; padding: 5rem 1.25rem 2rem; background-position: center; background-size: cover; }
 .society-window-shade { position: absolute; z-index: -1; inset: 0; background: linear-gradient(180deg, rgb(5 6 5 / .54), rgb(5 6 5 / .92) 78%), linear-gradient(90deg, rgb(5 6 5 / .72), transparent); }
